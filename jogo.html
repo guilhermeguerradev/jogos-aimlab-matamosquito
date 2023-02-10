@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo do mosquito</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jogo.js"></script>
+        <style>
+            html {
+                cursor: url(imagens/mata_mosca.png) 30 30, auto;
+            }   
+        </style>
+
+        
+    </head>
+    <body onresize="ajuste()">
+        <div id="painel">
+            <div class="vidas">
+                <img src="imagens/coracao_cheio.png" id="v1" alt="">
+                <img src="imagens/coracao_cheio.png" id="v2" alt="">
+                <img src="imagens/coracao_cheio.png" id="v3" alt="">
+            </div>
+
+            <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+            </div>
+        </div>
+    
+
+
+        <script>
+            document.getElementById("cronometro").innerHTML = tempo
+            var geraMosquito = setInterval(function () { 
+                mosquitorandom() }, nivelgame)
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      </style>
+      <link rel="stylesheet" href="estilo.css">
+
+      <script>
+         function selecionaGame() {
+             var game = document.getElementById('game').value
+             if (game === "matamosquito") {
+                  window.location.href ="matamosquitonivel.html"
+             } else
+             window.location.href ="aimlab.html"
+         }
+     </script>
+   </head>
+   <body>
+      <section>
+         <div class="main-bg">
+            <div class="container">
+               <div id="games">
+                  <h1>Escolha um jogo</h1>
+                  <div class="escolhadogame">
+                     <select id="game" class="form-control" >
+                        <option value="aimlab"><a href="#aimlab">Aim Lab</a></option>
+                        <option value="matamosquito">Mata Mosquito</option>
+                  </select>
+                  </div>
+                  <button class="btn btn-lg mt-3 w-100 btn-primary" onclick="selecionaGame()">Iniciar</button>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>

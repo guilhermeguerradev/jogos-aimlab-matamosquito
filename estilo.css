@@ -1,0 +1,43 @@
+/*Formatações padrões INICIO*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+   font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+   font-family: 'Bebas Neue', cursive;
+   font-size: 10rem;
+}
+
+p {
+   font-size: 2rem;
+}
+
+
+/*Formatações padrões FIM*/
+.main-bg {
+   background: url(imagens/parabolic-rectangle.svg);
+   background-position: center;
+}
+
+.container {
+   color: white;
+   width: 100vh;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#games .escolhadogame select {
+   height: 5rem;
+   font-size: 2rem;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="jogoaimlab.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <style>
+      html {
+         cursor: crosshair;
+      }
+   </style>
+   
+</head>
+<body id="aimlab" onresize="ajusteTamanhaPalco()">
+   <div id="painel">
+      <div class="cronometro">
+          Tempo restante: <span id="cronometro"></span>
+      </div>
+  </div>
+
+   <script>
+      document.getElementById("cronometro").innerHTML = tempo
+      var gerarBolas = setInterval(function () { 
+          ballsrandom() },750)
+  </script>
+</body>
+</html>

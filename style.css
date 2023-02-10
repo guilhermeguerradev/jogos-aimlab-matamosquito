@@ -1,0 +1,49 @@
+body {
+    background: url(imagens/bg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+body#aimlab {
+    background: url(imagens/flat-mountains.svg) no-repeat;
+    background-size: 100%;
+}
+
+body#aimlab a {
+    width: 150px;
+    text-decoration: none;
+    display: block;
+    background: rgb(18, 141, 182);
+    color: white;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 8rem;
+}
+
+.mosquito1 {
+    width: 50px;
+    height: 50px;
+}
+
+.mosquito2 {
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito3 {
+    width: 90px;
+    height: 90px;
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
+
+#painel {
+    padding: 15px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.7;
+}
